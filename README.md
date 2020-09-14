@@ -51,7 +51,9 @@ Outras informações dos usuários cadastrados você pode encontrar no diretóri
 
 Você também pode cadastrar usuários com o comando:
 
-```python manage.py create_user -u <username> -p <password> -e <email> -c <cpf>```
+```shell script
+python manage.py create_user -u <username> -p <password> -e <email> -c <cpf>
+```
 
 #### Empréstimos
 
