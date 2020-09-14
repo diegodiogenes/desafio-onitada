@@ -1,0 +1,29 @@
+[
+  {
+    "model": "payments.payment",
+    "pk": 1,
+    "fields": {
+      "loan": 1,
+      "payment_date": "2020-09-12T01:59:23.426Z",
+      "value": "200.00"
+    }
+  },
+  {
+    "model": "payments.payment",
+    "pk": 2,
+    "fields": {
+      "loan": 1,
+      "payment_date": "2020-09-12T01:59:23.426Z",
+      "value": "100.00"
+    }
+  },
+  {
+    "model": "payments.payment",
+    "pk": 3,
+    "fields": {
+      "loan": 3,
+      "payment_date": "2020-09-12T01:59:23.426Z",
+      "value": "100.00"
+    }
+  }
+]
