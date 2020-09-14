@@ -33,12 +33,6 @@ Rode as migrações para criar as tabelas iniciais da api:
 python manage.py migrate
 ```
 
-Crie um usuário administrador para utilizar o sistema:
-
-```shell script
-python manage.py createsuperuser
-```
-
 ### Adicionando Dados Iniciais ao Sistema
 
 Caso queria utilizar dados default para popular o banco de dados do sistema, existem fixtures para todos os apps.
@@ -51,7 +45,13 @@ Para popular usuários no sistema, basta rodar o seguinte comando:
 python manage.py loaddata users
 ```
 
-As informações dos usuários cadastrados você pode encontrar em no diretório ```fixtures``` dentro do app Users.
+Com isso será criado um usuário administrador com password ```admin13``` e ```test1234``` para demais usuários.
+
+Outras informações dos usuários cadastrados você pode encontrar no diretório ```fixtures``` dentro do app Users.
+
+Você também pode cadastrar usuários com o comando:
+
+```python manage.py create_user -u <username> -p <password> -e <email> -c <cpf>```
 
 #### Empréstimos
 
@@ -72,6 +72,14 @@ python manage.py loaddata payments
 ```
 
 As informações dos pagamentos cadastrados você pode encontrar em no diretório ```fixtures``` dentro do app Payments.
+
+### Criando um usuário administrador
+
+Caso não tenha utilizado os dados iniciais do sistema pelo ```loaddata``` crie um usuário administrador para utilizar o sistema:
+
+```shell script
+python manage.py createsuperuser
+```
 
 ### Autenticação
 
