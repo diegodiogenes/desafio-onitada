@@ -35,6 +35,20 @@ class ClientManagerTest(APITestCase):
             'password': 'test1234'
         }
 
+    def test_authentication(self):
+        response = self.client.post('/api-token-auth/',
+                                    data={'username': 'johnlennon', 'password': 'test1234'},
+                                    format='json')
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+    def test_invalid_authentication(self):
+        response = self.client.post('/api-token-auth/',
+                                    data={'username': 'johnlennon', 'password': 'test12345'},
+                                    format='json')
+
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
     def test_create_valid_user(self):
         response = self.client.post('/api/users/',
                                     data=self.valid_payload,
