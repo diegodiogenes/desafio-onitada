@@ -39,6 +39,40 @@ Crie um usuário administrador para utilizar o sistema:
 python manage.py createsuperuser
 ```
 
+### Adicionando Dados Iniciais ao Sistema
+
+Caso queria utilizar dados default para popular o banco de dados do sistema, existem fixtures para todos os apps.
+
+#### Usuários
+
+Para popular usuários no sistema, basta rodar o seguinte comando:
+
+```shell script
+python manage.py loaddata users
+```
+
+As informações dos usuários cadastrados você pode encontrar em no diretório ```fixtures``` dentro do app Users.
+
+#### Empréstimos
+
+Para popular empréstimos no sistema, basta rodar o seguinte comando:
+
+```shell script
+python manage.py loaddata loans
+```
+
+As informações dos empréstimos cadastrados você pode encontrar em no diretório ```fixtures``` dentro do app Loans.
+
+#### Pagamentos
+
+Para popular pagamentos no sistema, basta rodar o seguinte comando:
+
+```shell script
+python manage.py loaddata payments
+```
+
+As informações dos pagamentos cadastrados você pode encontrar em no diretório ```fixtures``` dentro do app Payments.
+
 ### Autenticação
 
 Para acessar o seu token e utilizar todas as rotas do sistema, basta acessar:
