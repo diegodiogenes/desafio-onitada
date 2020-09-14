@@ -3,21 +3,41 @@
     "model": "users.user",
     "pk": 1,
     "fields": {
-      "name": "John Lennon",
-      "username": "johnlennon",
-      "email": "johnlennon@test.com",
-      "password": "test1234",
-      "cpf": "67585348630"
+      "password": "pbkdf2_sha256$216000$Aq2730SDyph6$LFUzSqCQSUlEyO0UtG1ImIT6I1QDgqa0ATBR6wPyOj0=",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2020-09-14T20:44:52.645Z",
+      "name": "",
+      "cpf": "",
+      "email": "admin@admin.com",
+      "groups": [],
+      "user_permissions": []
     }
   },
   {
     "model": "users.user",
     "pk": 2,
     "fields": {
+      "name": "John Lennon",
+      "username": "johnlennon",
+      "email": "johnlennon@test.com",
+      "password": "pbkdf2_sha256$216000$xsRiq7wwsDxm$3FbDd+Rba0pCC7pDOB33k5Tol7RB97Co9BDalev0LEw=",
+      "cpf": "67585348630"
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
       "name": "Paul McCartney",
       "username": "paulmc",
       "email": "paulmccartney@test.com",
-      "password": "test1234",
+      "password": "pbkdf2_sha256$216000$yemdrnVNplBd$qPS8U8L1WZUf0ZRBNrH7P9ltBs3lNxGgDygJgkZxwbA=",
       "cpf": "22165652456"
     }
   }

@@ -3,7 +3,7 @@
     "model": "loans.loan",
     "pk": 1,
     "fields": {
-		"client": 1,
+		"client": 2,
 		"value": "10000.00",
 		"interest_value": "0.03",
 		"ip_address": "127.0.0.1",
@@ -15,7 +15,7 @@
     "model": "loans.loan",
     "pk": 2,
     "fields": {
-		"client": 1,
+		"client": 2,
 		"value": "10000.00",
 		"interest_value": "0.001",
 		"ip_address": "127.0.0.1",
@@ -27,7 +27,7 @@
     "model": "loans.loan",
     "pk": 3,
     "fields": {
-		"client": 2,
+		"client": 3,
 		"value": "2000.00",
 		"interest_value": "0.008",
 		"ip_address": "127.0.0.1",
